@@ -3,7 +3,8 @@ let fact n =
 		if n = 0 then
 			acc
 		else
-			tail (n-1) n*acc in tail n 1
+			tail (n-1) n*acc
+	in tail n 1
 
 let _ =
 	let x = read_int () in
