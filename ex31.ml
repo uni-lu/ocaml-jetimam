@@ -7,7 +7,7 @@ let count_points input =
   let y = Random.int 7 in
   let z = Random.int 7 in
 
-  if input > x && input > y || input > x && input > z || input > y && input > z then
+  if input > x && input > y && z || input > x && input > z && y || input > y && input > z && x then
     2
   else if input = x || input = y || input = z then
     1
